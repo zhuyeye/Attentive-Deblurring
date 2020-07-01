@@ -15,4 +15,4 @@ python run_model.py --phase train --batch batch_size --lr 0.0001 --epoch 4000
 ## Acknowledgement
 Many parts of this code is adapted from [SRN](https://github.com/jiangsutx/SRN-Deblur)
 
-Thans the authors for sharing codes for their great works
+Thanks the authors for sharing codes for their great works
