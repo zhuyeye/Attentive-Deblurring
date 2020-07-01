@@ -7,11 +7,8 @@ import scipy.misc
 import numpy as np
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
-from datetime import datetime
 from util.util import *
-from util.BasicConvLSTMCell import *
 import skimage
-import random
 
 class DEBLUR(object):
     def __init__(self, args):
