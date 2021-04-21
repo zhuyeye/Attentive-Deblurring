@@ -1,5 +1,6 @@
 # Attentive deep network for blind motion deblurring in dynamic scenes
 TensorFlow Implementation of CVIU paper "[Attentive deep network for blind motion deblurring in dynamic scenes](https://csyhquan.github.io/manuscript/21_cviu_Attentive%20Deep%20Network%20for%20Blind%20Motion%20Deblurring%20on%20Dynamic%20Scenes.pdf)" <br/>
+Refer to https://csyhquan.github.io/category/c_publication.html for our more publications.
 ## Dataset
 We trained our model using the dataset from [DeepDeblur_release](https://github.com/SeungjunNah/DeepDeblur_release). Please put the training dataset into `training_set/`, and testing set into `testing_set/`.
 ## Test on our pretrain model
@@ -27,7 +28,7 @@ year = {2021},
 issn = {1077-3142},
 doi = {https://doi.org/10.1016/j.cviu.2021.103169},
 url = {https://www.sciencedirect.com/science/article/pii/S1077314221000138},
-author = {Yong Xu and Ye Zhu and Yuhui Quan and Hui Ji},
+author = {Yong Xu and Ye Zhu and Yuhui Quan and Hui Ji}
 }
 ```
 
