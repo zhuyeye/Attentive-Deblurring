@@ -8,11 +8,19 @@ Our code is easy to go with:
 ```bash
 python run_model.py --phase test --height 720 --width 1280 --gpu gpu_id
 ```
-The quantitative results of **PSNR** and **SSIM** is calculted using MATLAB based on the deblurring results. Here we can get a **PSNR** result of about **31.22** with python codes.
+The quantitative results of **PSNR** and **SSIM** is calculted using MATLAB based on the deblurring results. Here we can get a **PSNR** result of about **31.22dB** with python codes.
 ## Training 
 Training our model is easy to go with:
 ```bash
 python run_model.py --phase train --batch batch_size --lr 0.0001 --epoch 4000
+```
+
+## Defocus Deblurring
+Our model also works well on defocus deblurring, we train our model with [DPDD](https://github.com/Abdullah-Abuolaim/defocus-deblurring-dual-pixel) datatset and obtain a SOTA performance (about **25.66dB** on **PSNR**). The pretrained model is placed in `checkpoints/defocus/`. We only use the single color image as input, i.e. `train_c` and `test_c` of DPDD dataset.
+
+To test our defocus deblurring performance on DPDD testing set, you can easy to go with:
+```bash
+python run_model.py --phase test --height 1120 --width 1680 --gpu gpu_id --model defcous --steps 105000 --input_path input_dir --output_path out_dir
 ```
 
 ## Citation
